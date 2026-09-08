@@ -1,1 +1,341 @@
+### `index.html`
 
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CUIDA+ | Saúde para todos</title>
+
+    <meta
+        name="description"
+        content="CUIDA+ - informações simples sobre saúde, prevenção e bem-estar."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">+</span>
+                <span>CUIDA<span class="logo-plus">+</span></span>
+            </a>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#conteudos">Conteúdos</a>
+                <a href="#dicas">Dicas</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+
+            <a href="#conteudos" class="nav-button">
+                Explorar saúde
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="tag">
+                        🩺 Informação que cuida
+                    </span>
+
+                    <h1>
+                        Sua saúde em primeiro lugar.
+                    </h1>
+
+                    <p>
+                        Encontre informações simples e confiáveis sobre
+                        prevenção, bem-estar, alimentação, saúde mental
+                        e cuidados para o dia a dia.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#conteudos" class="primary-button">
+                            Ver conteúdos
+                        </a>
+
+                        <a href="#sobre" class="secondary-button">
+                            Conheça o CUIDA+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="health-circle">
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Cuidar também é se informar.
+                    </h3>
+
+                    <p>
+                        Pequenas atitudes podem fazer uma grande diferença
+                        na sua qualidade de vida.
+                    </p>
+
+                    <div class="health-stats">
+                        <div>
+                            <strong>+6</strong>
+                            <span>temas</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>gratuito</span>
+                        </div>
+
+                        <div>
+                            <strong>24h</strong>
+                            <span>acesso</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="tag">Encontre o que precisa</span>
+
+                    <h2>
+                        Conteúdos para diferentes momentos
+                    </h2>
+
+                    <p>
+                        Explore informações organizadas por categorias.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <button class="category-card" data-category="Prevenção">
+                        <span>🛡️</span>
+                        <strong>Prevenção</strong>
+                        <small>Cuidados para evitar problemas de saúde.</small>
+                    </button>
+
+                    <button class="category-card" data-category="Alimentação">
+                        <span>🥗</span>
+                        <strong>Alimentação</strong>
+                        <small>Informações sobre hábitos alimentares.</small>
+                    </button>
+
+                    <button class="category-card" data-category="Saúde mental">
+                        <span>🧠</span>
+                        <strong>Saúde mental</strong>
+                        <small>Bem-estar emocional e autocuidado.</small>
+                    </button>
+
+                    <button class="category-card" data-category="Atividade física">
+                        <span>🏃</span>
+                        <strong>Atividade física</strong>
+                        <small>Movimento e hábitos mais ativos.</small>
+                    </button>
+
+                    <button class="category-card" data-category="Sono">
+                        <span>😴</span>
+                        <strong>Sono</strong>
+                        <small>A importância de descansar bem.</small>
+                    </button>
+
+                    <button class="category-card" data-category="Primeiros cuidados">
+                        <span>🩹</span>
+                        <strong>Primeiros cuidados</strong>
+                        <small>Orientações básicas para situações comuns.</small>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTEÚDOS -->
+        <section class="posts-section" id="conteudos">
+            <div class="container">
+
+                <div class="section-heading posts-heading">
+
+                    <div>
+                        <span class="tag">Conteúdos recentes</span>
+
+                        <h2>
+                            Informação para cuidar melhor
+                        </h2>
+                    </div>
+
+                    <div class="search-box">
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Buscar conteúdo..."
+                            aria-label="Buscar conteúdo"
+                        >
+                    </div>
+
+                </div>
+
+                <div id="postsContainer" class="posts-grid">
+                    <!-- Os posts são carregados pelo JavaScript -->
+                </div>
+
+                <p id="noResults" class="no-results">
+                    Nenhum conteúdo encontrado.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- DICAS -->
+        <section class="tips-section" id="dicas">
+            <div class="container">
+
+                <div class="tips-content">
+
+                    <div>
+                        <span class="tag light-tag">
+                            💡 Dica rápida
+                        </span>
+
+                        <h2>
+                            Pequenas atitudes fazem diferença.
+                        </h2>
+
+                        <p>
+                            Manter uma rotina equilibrada, dormir bem,
+                            movimentar o corpo e procurar acompanhamento
+                            profissional quando necessário são atitudes
+                            importantes para cuidar da saúde.
+                        </p>
+                    </div>
+
+                    <div class="tip-list">
+
+                        <div class="tip-item">
+                            <span>✓</span>
+                            <p>Tenha uma rotina de sono regular.</p>
+                        </div>
+
+                        <div class="tip-item">
+                            <span>✓</span>
+                            <p>Mantenha uma alimentação equilibrada.</p>
+                        </div>
+
+                        <div class="tip-item">
+                            <span>✓</span>
+                            <p>Pratique atividades físicas de acordo com suas condições.</p>
+                        </div>
+
+                        <div class="tip-item">
+                            <span>✓</span>
+                            <p>Procure profissionais de saúde quando necessário.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about-section" id="sobre">
+            <div class="container about-grid">
+
+                <div class="about-icon">
+                    🏥
+                </div>
+
+                <div>
+                    <span class="tag">Sobre o projeto</span>
+
+                    <h2>
+                        O que é o CUIDA+?
+                    </h2>
+
+                    <p>
+                        O CUIDA+ é um projeto criado para tornar conteúdos
+                        de saúde mais fáceis de encontrar e compreender.
+                        A proposta é oferecer uma experiência simples,
+                        acolhedora e acessível.
+                    </p>
+
+                    <p>
+                        O site reúne conteúdos educativos sobre prevenção,
+                        alimentação, saúde mental, atividade física,
+                        sono e outros temas relacionados ao bem-estar.
+                    </p>
+
+                    <div class="about-warning">
+                        ⚠️ O conteúdo é educativo e não substitui uma
+                        consulta ou orientação de um profissional de saúde.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon">+</span>
+                    <span>CUIDA<span class="logo-plus">+</span></span>
+                </a>
+
+                <p>
+                    Informação para cuidar melhor.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#inicio">Início</a>
+                <a href="#conteudos">Conteúdos</a>
+                <a href="#dicas">Dicas</a>
+                <a href="#sobre">Sobre</a>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 CUIDA+. Projeto educativo.
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="posts.js"></script>
+
+</body>
+</html>
